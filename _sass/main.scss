@@ -20,7 +20,7 @@ html {
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-  transition: background 0.1s ease-in, color 0.1s ease-in;
+
   // font-size: 120%;
 }
 .mid-section-home {
@@ -46,14 +46,12 @@ body {
     font-weight: 600;
   }
 }
-.animationText {
-  animation: fadeText 500ms ease-in;
-}
+
 .sub-heading {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  animation: fadeMidText 2s ease-in;
+
   @include mediaQuery(phone-width) {
     width: 60%;
     min-width: 270px;
@@ -272,28 +270,5 @@ body {
     border-radius: 5px;
     margin: 10px 0px;
     overflow: auto;
-  }
-}
-
-@keyframes fadeText {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fadeMidText {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
